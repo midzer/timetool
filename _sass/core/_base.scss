@@ -1,0 +1,68 @@
+.is-flex {
+    display: flex;
+}
+
+.prev:before {
+    content: "\00AB";
+}
+
+.next:after {
+    content: "\00BB";
+}
+
+.next {
+    margin-left: auto;
+}
+
+.monthyear {
+    flex: 1;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.columns {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@media (max-width: 575.98px) {
+    .columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 768.98px) and (min-width: 576px) {
+    .columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .columns {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media (max-width: 1199.98px) and (min-width: 992px) {
+    .columns {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+@media (min-width: 1200px) {
+    .columns {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.5rem;
+}
