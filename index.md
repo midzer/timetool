@@ -6,6 +6,6 @@ layout: default
   {% include card.html %}
 </template>
 
-<div class="container is-fluid">
+<div class="container">
   <div id="calendar"></div>
 </div>
