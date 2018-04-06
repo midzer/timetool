@@ -15,7 +15,7 @@ function iso8601(date) {
 function renderMonth(date) {
   var day = date;
   var columns = document.createElement('div');
-  columns.className = 'columns is-multiline';
+  columns.className = 'columns';
   var daysInMonth = new Date(date.getYear(), date.getMonth() + 1, 0).getDate();
   
   for (var i = 1; i <= daysInMonth; i++) {
