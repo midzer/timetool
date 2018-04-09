@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.is-hidden {
+    display: none;
+}
+
 .prev:before {
     content: "\00AB";
 }
